@@ -1,0 +1,262 @@
+/*
+Theme Name: nikcub
+Author: nik cubrilovic
+Author URI: https://www.nikcub.com/
+Description: bootstrap based simple wordpress theme
+License: MIT
+*/
+
+
+/*
+ * Webwall CSS - (c) 2013.
+ */
+// Core variables and mixins
+// Include default bootstrap vars
+@import "bootstrap/variables.less";
+
+// Define our customizations here
+//
+// Color Swatches
+// --------------------------------------------------
+@turquoise:     #1abc9c;
+@green-sea:     #16a085;
+
+@emerald:       #2ecc71;
+@nephritis:     #27ae60;
+
+@peter-river:   #3498db;
+@belize-hole:   #2980b9;
+
+@amethyst:      #9b59b6;
+@wisteria:      #8e44ad;
+
+@wet-asphalt:   #34495e;
+@midnight-blue: #2c3e50;
+
+@sun-flower:    #f1c40f;
+@orange:        #f39c12;
+
+@carrot:        #e67e22;
+@pumpkin:       #d35400;
+
+@alizarin:      #e74c3c;
+@pomegranate:   #c0392b;
+
+@clouds:        #ecf0f1;
+@silver:        #bdc3c7;
+
+@concrete:      #95a5a6;
+@asbestos:      #7f8c8d;
+
+@gray-darker:            lighten(#000, 13.5%); // #222
+@gray-dark:              #7b8a8b;
+@gray:                   #95a5a6;
+@gray-light:             #b4bcc2;
+@gray-lighter:           #ecf0f1;
+
+// Brand colors
+// -------------------------
+
+@brand-primary:         #2C3E50;
+@brand-success:         darken(#18BC9C, 15%);
+@brand-warning:         #F39C12;
+@brand-danger:          #E74C3C;
+@brand-info:            #3498DB;
+
+// Scaffolding
+// -------------------------
+
+@body-bg:               #fff;
+@text-color:            @brand-primary;
+
+// Links
+// -------------------------
+
+@link-color:            @brand-success;
+@link-hover-color:      @link-color;
+
+@icon-font-path: "fonts";
+
+// End Color Customizations
+
+// @import "flatly/variables.less";
+
+// Continue bootstrap defaults. Only uncomment what you need.
+
+// @import "flatly/bootswatch.less";
+@import "bootstrap/mixins.less";
+
+// Custom google font
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url('@{icon-font-path}lato-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url('@{icon-font-path}lato-bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url('@{icon-font-path}lato-black.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url('@{icon-font-path}lato-italic.woff') format('woff');
+}
+
+
+// Reset
+@import "bootstrap/normalize.less";
+@import "bootstrap/print.less";
+
+// Core CSS
+@import "bootstrap/scaffolding.less";
+@import "bootstrap/type.less";
+@import "bootstrap/code.less";
+// @import "bootstrap/grid.less";
+
+@import "bootstrap/tables.less";
+@import "bootstrap/forms.less";
+@import "bootstrap/buttons.less";
+
+// Components: common
+// @import "bootstrap/component-animations.less";
+// @import "bootstrap/input-groups.less";
+// @import "bootstrap/dropdowns.less";
+// @import "bootstrap/list-group.less";
+@import "bootstrap/panels.less";
+// @import "bootstrap/wells.less";
+// @import "bootstrap/close.less";
+
+// Components: Nav
+@import "bootstrap/navs.less";
+@import "bootstrap/navbar.less";
+// @import "bootstrap/button-groups.less";
+// @import "bootstrap/breadcrumbs.less";
+// @import "bootstrap/pagination.less";
+@import "bootstrap/pager.less";
+
+// Components: Popovers
+// @import "bootstrap/modals.less";
+// @import "bootstrap/tooltip.less";
+// @import "bootstrap/popovers.less";
+
+// Components: Misc
+// @import "bootstrap/alerts.less";
+// @import "bootstrap/thumbnails.less";
+// @import "bootstrap/media.less";
+// @import "bootstrap/labels.less";
+// @import "bootstrap/badges.less";
+// @import "bootstrap/progress-bars.less";
+// @import "bootstrap/accordion.less";
+// @import "bootstrap/carousel.less";
+@import "bootstrap/jumbotron.less";
+
+body {
+  padding-top: @navbar-height;
+}
+
+#topnav {
+  .navbar();
+  .navbar-fixed-top();
+  .navbar-default();
+  /*.navbar-inverse();*/
+}
+
+.container {
+  .container-fixed();
+}
+
+.wrapper {
+  .make-row();
+}
+
+.sidebar-left {
+  .make-xs-column(12);
+  .make-md-column(2);
+}
+
+.content-main {
+  .make-xs-column(12);
+  .make-md-column(9);
+}
+
+.sidebar-right {
+  .make-xs-column(12);
+  .make-md-column(3);
+}
+
+.footer {
+  margin-top: 50px;
+  min-height: 60px;
+  padding-top: 25px;
+  background-color: @jumbotron-bg;
+}
+
+.footer-col {
+  .make-md-column(6);
+}
+
+.splash-col {
+  .make-md-column(4);
+  padding-left: 0px;
+  padding-right: 30px;
+}
+
+.form-signup .form-input {
+  .make-sm-column(6);
+}
+
+.form-signup .offset {
+  .make-sm-column-offset(2);
+}
+
+.form-signup .control-label {
+  .make-sm-column(2);
+}
+
+.splash-col img {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+.splash-col .img-wrap {
+  height: 100px;
+}
+@media (min-width: @screen-xs-min) {
+  .container {
+  }
+}
+
+@media (min-width: @screen-sm-min) {
+  .container {
+    width: @container-sm;
+  }
+}
+
+@media (min-width: @screen-md-min) {
+  .container {
+    width: @container-md;
+  }
+}
+
+@media (min-width: @screen-lg-min) {
+  .container {
+    width: @container-lg;
+  }
+}
+
+
+// Utility classes
+@import "bootstrap/utilities.less"; // Has to be last to override when necessary
+@import "bootstrap/responsive-utilities.less";
