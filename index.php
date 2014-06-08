@@ -6,8 +6,8 @@
 <?php if ( have_posts() ) : ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-  <?php print get_post_format() . PHP_EOL; ?>
-  <?php get_template_part( 'content', get_post_format() ); ?>
+  <h1 class="entry-title"><?php the_title() ?></h1>
+  <p><?php the_excerpt(); ?></p>
 <?php endwhile; ?>
 
 <?php nikcub_nav( 'nav-below' ); ?>
