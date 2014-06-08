@@ -6,8 +6,10 @@
 <?php if ( have_posts() ) : ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-  <h1 class="entry-title"><?php the_title() ?></h1>
-  <p><?php the_excerpt(); ?></p>
+  <div class="list">
+    <h4><a href="<?php the_permalink() ?>"><?php the_title() ?></a> <p class="entry-date"><?php the_date('l, F j, Y') ?></p></h4>
+    <p><?php the_excerpt(); ?></p>
+  </div>
 <?php endwhile; ?>
 
 <?php nikcub_nav( 'nav-below' ); ?>
