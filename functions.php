@@ -13,6 +13,15 @@ add_action('init', 'buckley_init');
 
 function buckley_setup() {
 
+  $args = array(
+    // 'flex-width'    => true,
+    // 'width'         => 980,
+    'flex-height'    => true,
+    'height'        => 54
+    // 'default-image' => get_template_directory_uri() . '/images/header.jpg',
+  );
+  add_theme_support( 'custom-header', $args );
+
   add_theme_support('menus');
 
   register_nav_menus(

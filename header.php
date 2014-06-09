@@ -10,7 +10,7 @@
   <?php do_action( 'before' ); ?>
   <header id="masthead" class="site-header" role="banner">
     <hgroup>
-      <img src="http://0.gravatar.com/avatar/6af3381f219bc3eee66d1a28f98021fd?s=125&d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D125&r=G">
+      <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
       <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
 
