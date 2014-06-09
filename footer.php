@@ -1,11 +1,18 @@
   </div>
   <footer id="footer">
-    &copy; 2014 <a href="http://creativecommons.org/licenses/by/3.0/">CC By 3.0</a> <a href="http://www.nikcub.com/">Nik Cubrilovic</a>
-    <a href="">Archive</a>
-    <a href="/about">About</a>
-    <a href="/contact">Contact</a>
-    <a href="/feed">Feed</a>
-    <a href="http://www.twitter.com/nikcub">@nikcub</a>
+    <?php do_action('footer'); ?>
+    &copy; <?php the_date('Y') ?>
+    <?php
+      if(has_nav_menu('footer-menu')) {
+        wp_nav_menu(array(
+          'theme_location' => 'footer-menu',
+          'container' => 'nav',
+          'items_wrap' => '<ul>%3$s</ul>'
+
+          ));
+      }
+    ?>
+
   </footer>
 </div>
 
