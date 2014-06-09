@@ -1,7 +1,6 @@
   </div>
   <footer id="footer">
     <?php do_action('footer'); ?>
-    &copy; <?php the_date('Y') ?>
     <?php
       if(has_nav_menu('footer-menu')) {
         wp_nav_menu(array(
