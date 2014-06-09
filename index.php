@@ -12,7 +12,7 @@
   </div>
 <?php endwhile; ?>
 
-<?php nikcub_nav( 'nav-below' ); ?>
+<?php buckley_post_nav( 'nav-below' ); ?>
 
 <?php endif; ?>
 
