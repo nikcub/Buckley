@@ -158,12 +158,13 @@ body {
 }
 
 #masthead hgroup h1 {
+  float: left;
   font-size: 18pt;
   color: white;
   line-height: @masthead-height;
   padding: 0;
   margin: 0;
-  margin-left: 50px;
+  margin-left: 20px;
   color: white;
 }
 
@@ -195,6 +196,31 @@ body {
 #footer a {
   margin-top: 40px;
   margin-right: 20px;
+}
+
+nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+}
+
+nav > ul > li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  margin-right: 15px;
+  height: @masthead-height;
+  line-height: @masthead-height;
+}
+
+nav.menu-header-container > ul {
+  margin-left: 20px;
+}
+
+nav.menu-header-container > ul > li a {
+  color: white;
+  font-weight: bold;
 }
 
 h1.entry-title {
