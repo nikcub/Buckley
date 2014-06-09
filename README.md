@@ -1,6 +1,8 @@
-## Wordpress Bootstrap LESS Skeleton
+## Wordpress Buckley Theme
 
-[Twitter Bootstrap](http://www.github.com/twbs/bootstrap) is an increadibly popular CSS framework. There are numerous
+Simple starter Wordpress theme built on the latest version of [Twitter Bootstrap](http://www.github.com/twbs/bootstrap).
+
+Twitter Bootstrap is an increadibly popular CSS framework. There are numerous
 examples of using Bootstrap with a bare Wordpress theme as a getting started guide. All of these examples simply drop
 in the complete compiled `bootstrap.css` file and then use the semantic grid and overrides to specify a design or theme.
 
