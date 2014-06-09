@@ -2159,9 +2159,12 @@ body {
   margin-left: -15px;
   margin-right: -15px;
 }
-#main div.content img {
+img.screenshot {
   width: 900px;
   margin: 0 auto;
+}
+article.page h1.entry-title {
+  text-align: left;
 }
 #footer {
   margin-left: -15px;
