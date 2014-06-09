@@ -2134,11 +2134,12 @@ body {
   margin-right: 6px;
 }
 #masthead hgroup h1 {
+  float: left;
   font-size: 18pt;
   line-height: 50px;
   padding: 0;
   margin: 0;
-  margin-left: 50px;
+  margin-left: 20px;
   color: white;
 }
 #masthead hgroup h1 a {
@@ -2177,6 +2178,27 @@ body {
   margin-top: 40px;
   margin-right: 20px;
 }
+nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+}
+nav > ul > li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  margin-right: 15px;
+  height: 50px;
+  line-height: 50px;
+}
+nav.menu-header-container > ul {
+  margin-left: 20px;
+}
+nav.menu-header-container > ul > li a {
+  color: white;
+  font-weight: bold;
+}
 h1.entry-title {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   text-align: center;
@@ -2190,6 +2212,10 @@ h1.entry-title a {
 h3.entry-date {
   color: #808080;
   text-align: center;
+}
+span.entry-date {
+  color: #808080;
+  font-size: 11pt;
 }
 .clearfix:before,
 .clearfix:after,
