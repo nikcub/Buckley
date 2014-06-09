@@ -7,7 +7,7 @@
 
 <?php while ( have_posts() ) : the_post(); ?>
   <div class="list">
-    <h4><a href="<?php the_permalink() ?>"><?php the_title() ?></a> <p class="entry-date"><?php the_date('l, F j, Y') ?></p></h4>
+    <h4><a href="<?php the_permalink() ?>"><?php the_title() ?></a> <span class="entry-date"><?php the_date('l, F j, Y') ?></span></h4>
     <p><?php the_excerpt(); ?></p>
   </div>
 <?php endwhile; ?>
