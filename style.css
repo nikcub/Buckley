@@ -5,36 +5,6 @@ Author URI: https://www.nikcub.com/
 Description: bootstrap based simple wordpress theme
 License: MIT
 */
-@font-face {
-  font-family: 'Droid Serif';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Droid Serif'), local('DroidSerif'), url(http://themes.googleusercontent.com/static/fonts/droidserif/v4/0AKsP294HTD-nvJgucYTaLrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
-}
-@font-face {
-  font-family: 'Droid Serif';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Droid Serif Bold'), local('DroidSerif-Bold'), url(http://themes.googleusercontent.com/static/fonts/droidserif/v4/QQt14e8dY39u-eYBZmppwRbnBKKEOwRKgsHDreGcocg.woff) format('woff');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
-}
-@font-face {
-  font-family: 'Ubuntu Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Ubuntu Mono'), local('UbuntuMono-Regular'), url(http://themes.googleusercontent.com/static/fonts/ubuntumono/v4/ViZhet7Ak-LRXZMXzuAfkbrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
-}
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -302,7 +272,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #2c3e50;
@@ -2025,7 +1995,7 @@ input[type="button"].btn-block {
   cursor: not-allowed;
 }
 body {
-  font-family: "Droid Serif", Times, serif;
+  font-family: Times, serif;
 }
 #page {
   margin-right: auto;
@@ -2163,7 +2133,7 @@ nav.menu-footer-container > ul > li {
   font-size: 12px;
 }
 h1.entry-title {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   text-align: center;
   text-decoration: none;
   color: black;
@@ -2184,7 +2154,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: "Ubuntu Mono", "Courier New", monospace;
+  font-family: "Courier New", monospace;
 }
 code {
   padding: 2px 4px;
@@ -2213,7 +2183,7 @@ pre {
   border-radius: 4px;
 }
 .highlight {
-  font-family: "Ubuntu Mono", "Courier New", monospace;
+  font-family: "Courier New", monospace;
   display: block;
   padding: 9.5px;
   margin: 0 0 10px;
