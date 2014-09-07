@@ -16,5 +16,7 @@
 </div>
 
 <?php wp_footer(); ?>
+
+<p><center><small>Third-party requests on this page: 0</small></center></p>
 </body>
 </html>
