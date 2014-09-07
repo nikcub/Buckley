@@ -3,7 +3,7 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><?php bloginfo('name')?> - <?php bloginfo('description')?> - <?php wp_title( ); ?></title>
+  <title><?php bloginfo('name')?> - <?php bloginfo('description')?> <?php wp_title( ); ?></title>
   <link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.nikcub.com/feed/atom">
   <?php wp_head(); ?>
 </head>
@@ -12,7 +12,7 @@
   <header id="masthead" class="site-header" role="banner">
     <hgroup>
       <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
-      <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+      <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' );?> - <?php bloginfo('description'); ?></a></h1>
 
 
             <?php
