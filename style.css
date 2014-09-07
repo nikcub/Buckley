@@ -273,7 +273,7 @@ html {
 }
 body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 12pt;
+  font-size: 13pt;
   line-height: 1.42857143;
   color: #2c3e50;
   background-color: #ffffff;
@@ -331,8 +331,8 @@ img {
   border-radius: 50%;
 }
 hr {
-  margin-top: 17pt;
-  margin-bottom: 17pt;
+  margin-top: 18pt;
+  margin-bottom: 18pt;
   border: 0;
   border-top: 1px solid #eeeeee;
 }
@@ -406,8 +406,8 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 17pt;
-  margin-bottom: 8.5pt;
+  margin-top: 18pt;
+  margin-bottom: 9pt;
 }
 h1 small,
 .h1 small,
@@ -429,8 +429,8 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin-top: 8.5pt;
-  margin-bottom: 8.5pt;
+  margin-top: 9pt;
+  margin-bottom: 9pt;
 }
 h4 small,
 .h4 small,
@@ -448,40 +448,40 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 31pt;
+  font-size: 33pt;
 }
 h2,
 .h2 {
-  font-size: 25pt;
+  font-size: 27pt;
 }
 h3,
 .h3 {
-  font-size: 21pt;
+  font-size: 23pt;
 }
 h4,
 .h4 {
-  font-size: 15pt;
+  font-size: 17pt;
 }
 h5,
 .h5 {
-  font-size: 12pt;
+  font-size: 13pt;
 }
 h6,
 .h6 {
-  font-size: 11pt;
+  font-size: 12pt;
 }
 p {
-  margin: 0 0 8.5pt;
+  margin: 0 0 9pt;
 }
 .lead {
-  margin-bottom: 17pt;
-  font-size: 13pt;
+  margin-bottom: 18pt;
+  font-size: 14pt;
   font-weight: 300;
   line-height: 1.4;
 }
 @media (min-width: 768px) {
   .lead {
-    font-size: 18pt;
+    font-size: 19.5pt;
   }
 }
 small,
@@ -573,14 +573,14 @@ a.bg-danger:hover {
   background-color: #e4b9b9;
 }
 .page-header {
-  padding-bottom: 7.5pt;
-  margin: 34pt 0 17pt;
+  padding-bottom: 8pt;
+  margin: 36pt 0 18pt;
   border-bottom: 1px solid #eeeeee;
 }
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 8.5pt;
+  margin-bottom: 9pt;
 }
 ul ul,
 ol ul,
@@ -604,7 +604,7 @@ ol ol {
 }
 dl {
   margin-top: 0;
-  margin-bottom: 17pt;
+  margin-bottom: 18pt;
 }
 dt,
 dd {
@@ -640,9 +640,9 @@ abbr[data-original-title] {
   text-transform: uppercase;
 }
 blockquote {
-  padding: 8.5pt 17pt;
-  margin: 0 0 17pt;
-  font-size: 15pt;
+  padding: 9pt 18pt;
+  margin: 0 0 18pt;
+  font-size: 13pt;
   border-left: 5px solid #eeeeee;
 }
 blockquote p:last-child,
@@ -692,7 +692,7 @@ blockquote:after {
   content: "";
 }
 address {
-  margin-bottom: 17pt;
+  margin-bottom: 18pt;
   font-style: normal;
   line-height: 1.42857143;
 }
@@ -1372,7 +1372,7 @@ th {
 }
 .table {
   width: 100%;
-  margin-bottom: 17pt;
+  margin-bottom: 18pt;
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
@@ -1553,7 +1553,7 @@ table th[class*="col-"] {
 @media screen and (max-width: 767px) {
   .table-responsive {
     width: 100%;
-    margin-bottom: 12.75pt;
+    margin-bottom: 13.5pt;
     overflow-y: hidden;
     overflow-x: scroll;
     -ms-overflow-style: -ms-autohiding-scrollbar;
@@ -1608,7 +1608,7 @@ table th[class*="col-"] {
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 12px;
-  font-size: 12pt;
+  font-size: 13pt;
   line-height: 1.42857143;
   border-radius: 4px;
   -webkit-user-select: none;
@@ -1926,19 +1926,19 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-lg {
   padding: 10px 16px;
-  font-size: 15pt;
+  font-size: 17pt;
   line-height: 1.33;
   border-radius: 6px;
 }
 .btn-sm {
   padding: 5px 10px;
-  font-size: 11pt;
+  font-size: 12pt;
   line-height: 1.5;
   border-radius: 3px;
 }
 .btn-xs {
   padding: 1px 5px;
-  font-size: 11pt;
+  font-size: 12pt;
   line-height: 1.5;
   border-radius: 3px;
 }
@@ -1958,7 +1958,7 @@ input[type="button"].btn-block {
 }
 .pager {
   padding-left: 0;
-  margin: 17pt 0;
+  margin: 18pt 0;
   list-style: none;
   text-align: center;
 }
@@ -2173,9 +2173,9 @@ kbd {
 }
 pre {
   display: block;
-  padding: 8pt;
-  margin: 0 0 8.5pt;
-  font-size: 11pt;
+  padding: 8.5pt;
+  margin: 0 0 9pt;
+  font-size: 12pt;
   line-height: 1.42857143;
   word-break: break-all;
   word-wrap: break-word;
@@ -2185,9 +2185,9 @@ pre {
 .highlight {
   font-family: "Courier New", monospace;
   display: block;
-  padding: 8pt;
-  margin: 0 0 8.5pt;
-  font-size: 11pt;
+  padding: 8.5pt;
+  margin: 0 0 9pt;
+  font-size: 12pt;
   line-height: 1.42857143;
   word-break: break-all;
   word-wrap: break-word;
