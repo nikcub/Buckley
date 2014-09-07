@@ -3,7 +3,7 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><?php bloginfo('name')?> - <?php bloginfo('description')?> <?php wp_title( ); ?></title>
+  <title><?php bloginfo('description')?> - <?php bloginfo('name')?> <?php wp_title( ); ?></title>
   <link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.nikcub.com/feed/atom">
   <?php wp_head(); ?>
 </head>
