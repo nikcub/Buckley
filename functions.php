@@ -53,7 +53,7 @@ function buckley_head_cleanup() {
   // Originally from http://wpengineer.com/1438/wordpress-header/
   // remove_action('wp_head', 'feed_links', 2);
   // remove_action('wp_head', 'feed_links_extra', 3);
-  // remove_action('wp_head', 'rsd_link');
+  remove_action('wp_head', 'rsd_link');
   remove_action('wp_head', 'wlwmanifest_link');
   remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
   remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
@@ -80,6 +80,27 @@ function buckley_scripts() {
 }
 add_action('wp_enqueue_scripts', 'buckley_scripts', 100);
 
+
+function buckley_comment($comment, $args, $depth) {
+  $GLOBALS['comment'] = $comment;
+  extract($args, EXTR_SKIP);
+  ?>
+    <li>
+      <div class="comment-body">
+        <div class="comment-meta">
+          <cite><?php echo get_comment_author_link() ?></cite>
+          <a href="<?php echo htmlspecialchars(get_comment_link($comment->comment_ID)); ?>" alt="<?php printf("%s %s", get_comment_date(), get_comment_time()) ?>" class="comment-hash">#</a>
+        </div>
+        <div class="comment-content">
+          <?php comment_text(); ?>
+        </div>
+        <div class="comment-reply">
+          <?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+        </div>
+      </div>
+    </li>
+  <?php
+}
 
 function buckley_entry_meta() {
   // Translators: used between list items, there is a space after the comma.
