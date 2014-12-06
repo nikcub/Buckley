@@ -12,7 +12,7 @@
   <header id="masthead" class="site-header" role="banner">
     <hgroup>
       <img src="https://www.nikcub.com/wp-content/uploads/2014/09/nik-profile-47.jpg" height="47" width=47 alt="Nik Cubrilovic">
-      <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' );?> - <?php bloginfo('description'); ?></a></h1>
+      <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo('description'); ?></a></h1>
 
 
             <?php
